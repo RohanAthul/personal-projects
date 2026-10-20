@@ -1,0 +1,572 @@
+{
+  "checks": {
+    "head_up_dot_raw": 0.8922993663593559,
+    "head_up_dot_aligned": 0.94883299120221,
+    "walk_cos_minus_z": 0.4327218127306928,
+    "horizontal_range_m": 2.61015625,
+    "raw_horizontal_range_units": 2.1734999999999998,
+    "head_up_dot_aligned_min_scene": 0.911700561806322,
+    "horizontal_range_m_by_scene_min_max": [
+      2.189485142920705,
+      2.874060423693291
+    ],
+    "raw_range_units_by_scene_min_max": [
+      0.8810000000000001,
+      5.545
+    ]
+  },
+  "rounding_step_speeds": {
+    "ang_frame_deg_s": 3.4377467707849396,
+    "ang_lag_deg_s": 0.5729577951308232,
+    "trans_frame_m_s": 0.08333333333333334,
+    "trans_lag_m_s": 0.013888888888888888
+  },
+  "qc": {
+    "traces_total": 264,
+    "traces_included": 257,
+    "excluded_short": [
+      {
+        "user": "user108",
+        "scene": "alameda",
+        "raw_duration_s": 55.9
+      },
+      {
+        "user": "user104",
+        "scene": "berlin",
+        "raw_duration_s": 55.8
+      },
+      {
+        "user": "user105",
+        "scene": "bicycle",
+        "raw_duration_s": 40.6
+      },
+      {
+        "user": "user101",
+        "scene": "london",
+        "raw_duration_s": 42.0
+      },
+      {
+        "user": "user105",
+        "scene": "london",
+        "raw_duration_s": 57.2
+      },
+      {
+        "user": "user111",
+        "scene": "london",
+        "raw_duration_s": 58.1
+      },
+      {
+        "user": "user105",
+        "scene": "playroom",
+        "raw_duration_s": 48.7
+      }
+    ],
+    "users": 22,
+    "scenes": 12,
+    "non_monotonic_rows": 1,
+    "raw_gaps_over_0p2s": 14,
+    "traces_with_gaps": 13,
+    "resampled_nan_samples": 526,
+    "resampled_total_samples": 462600,
+    "ang_masked": 14,
+    "trans_masked": 60,
+    "speed_samples": 460448,
+    "position_jump_traces": [
+      {
+        "user": "user116",
+        "scene": "alameda",
+        "max_step_m": 2.97
+      },
+      {
+        "user": "user116",
+        "scene": "drjohnson",
+        "max_step_m": 3.13
+      },
+      {
+        "user": "user102",
+        "scene": "london",
+        "max_step_m": 0.74
+      },
+      {
+        "user": "user117",
+        "scene": "treehill",
+        "max_step_m": 2.64
+      }
+    ],
+    "raw_rate_hz_median_by_scene": {
+      "alameda": 35.7,
+      "berlin": 71.4,
+      "bicycle": 35.7,
+      "drjohnson": 35.7,
+      "london": 71.4,
+      "nyc": 35.7,
+      "playroom": 35.7,
+      "room": 71.4,
+      "stump": 71.4,
+      "train": 71.4,
+      "treehill": 71.4,
+      "truck": 71.4
+    }
+  },
+  "leave_one_out": [
+    {
+      "left_out": "alameda",
+      "measure": "ang_speed_deg_s",
+      "diff": 0.07288460320315564,
+      "effect_size": 0.01942357973456369,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "left_out": "alameda",
+      "measure": "trans_speed_m_s",
+      "diff": 0.029507173545705357,
+      "effect_size": 0.7755885089081029,
+      "p_holm": 0.007696102945327798,
+      "significant": true
+    },
+    {
+      "left_out": "alameda",
+      "measure": "dir_entropy_bits",
+      "diff": -0.01776862703138377,
+      "effect_size": -0.0600978283859084,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "left_out": "alameda",
+      "measure": "dir_coverage",
+      "diff": -0.0047640759446314915,
+      "effect_size": -0.17359067472765308,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "left_out": "alameda",
+      "measure": "pos_entropy_bits",
+      "diff": 0.23138230496168466,
+      "effect_size": 0.7070704192045191,
+      "p_holm": 0.013125030997700335,
+      "significant": true
+    },
+    {
+      "left_out": "berlin",
+      "measure": "ang_speed_deg_s",
+      "diff": -0.009789183016953439,
+      "effect_size": -0.0025841960386806142,
+      "p_holm": 0.9904435301474759,
+      "significant": false
+    },
+    {
+      "left_out": "berlin",
+      "measure": "trans_speed_m_s",
+      "diff": 0.04217627853208203,
+      "effect_size": 1.1627912389780843,
+      "p_holm": 0.00010344542084259811,
+      "significant": true
+    },
+    {
+      "left_out": "berlin",
+      "measure": "dir_entropy_bits",
+      "diff": -0.06729358288405697,
+      "effect_size": -0.22209508035242115,
+      "p_holm": 0.6187748742076848,
+      "significant": false
+    },
+    {
+      "left_out": "berlin",
+      "measure": "dir_coverage",
+      "diff": -0.01203586793864571,
+      "effect_size": -0.3986639407480823,
+      "p_holm": 0.22651367043222867,
+      "significant": false
+    },
+    {
+      "left_out": "berlin",
+      "measure": "pos_entropy_bits",
+      "diff": 0.3087849866122303,
+      "effect_size": 0.9718059505305093,
+      "p_holm": 0.0006845398986333983,
+      "significant": true
+    },
+    {
+      "left_out": "london",
+      "measure": "ang_speed_deg_s",
+      "diff": -0.2265735302140065,
+      "effect_size": -0.06289739051169553,
+      "p_holm": 0.7708793928764874,
+      "significant": false
+    },
+    {
+      "left_out": "london",
+      "measure": "trans_speed_m_s",
+      "diff": 0.03376868391044638,
+      "effect_size": 0.8323922696644611,
+      "p_holm": 0.0032663025737512093,
+      "significant": true
+    },
+    {
+      "left_out": "london",
+      "measure": "dir_entropy_bits",
+      "diff": -0.060682106957825124,
+      "effect_size": -0.21044317846492058,
+      "p_holm": 0.6696948298288322,
+      "significant": false
+    },
+    {
+      "left_out": "london",
+      "measure": "dir_coverage",
+      "diff": -0.015695145903479236,
+      "effect_size": -0.49502734569755175,
+      "p_holm": 0.09112523242619497,
+      "significant": false
+    },
+    {
+      "left_out": "london",
+      "measure": "pos_entropy_bits",
+      "diff": 0.28439220808078175,
+      "effect_size": 0.9150495310509204,
+      "p_holm": 0.0016162326631272812,
+      "significant": true
+    },
+    {
+      "left_out": "nyc",
+      "measure": "ang_speed_deg_s",
+      "diff": 0.7446585781100284,
+      "effect_size": 0.21035119904140293,
+      "p_holm": 0.6701080136238916,
+      "significant": false
+    },
+    {
+      "left_out": "nyc",
+      "measure": "trans_speed_m_s",
+      "diff": 0.020410765218828186,
+      "effect_size": 0.549501894290513,
+      "p_holm": 0.07025270191303302,
+      "significant": false
+    },
+    {
+      "left_out": "nyc",
+      "measure": "dir_entropy_bits",
+      "diff": -0.007716646021920479,
+      "effect_size": -0.02501762165430602,
+      "p_holm": 0.9077032762709528,
+      "significant": false
+    },
+    {
+      "left_out": "nyc",
+      "measure": "dir_coverage",
+      "diff": -0.008119388327721655,
+      "effect_size": -0.2996774697678745,
+      "p_holm": 0.5233870846063235,
+      "significant": false
+    },
+    {
+      "left_out": "nyc",
+      "measure": "pos_entropy_bits",
+      "diff": 0.18763240096015507,
+      "effect_size": 0.6603398487051477,
+      "p_holm": 0.027286261145973705,
+      "significant": true
+    }
+  ],
+  "scale_vs_scene_median": {
+    "trans_speed_m_s": {
+      "rho": -0.1940110709403283,
+      "p": 0.5457153559319013
+    },
+    "pos_entropy_bits": {
+      "rho": -0.17284622683774703,
+      "p": 0.5911312055661145
+    }
+  },
+  "descriptives_median_by_group": {
+    "3DGS": {
+      "ang_speed_deg_s": 27.628448623375846,
+      "trans_speed_m_s": 0.22326551288116564,
+      "dir_entropy_bits": 6.644717785167328,
+      "dir_coverage": 0.24845679012345678,
+      "pos_entropy_bits": 4.805603447356642
+    },
+    "ZipNeRF": {
+      "ang_speed_deg_s": 27.131632772759197,
+      "trans_speed_m_s": 0.25915346968102393,
+      "dir_entropy_bits": 6.5399244033925,
+      "dir_coverage": 0.24228395061728394,
+      "pos_entropy_bits": 4.970483609440604
+    }
+  },
+  "primary": [
+    {
+      "measure": "ang_speed_deg_s",
+      "n": 22,
+      "shapiro_p": 0.8235396009154721,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": 0.1452951170205557,
+      "diff_ci_lo": -1.2574894663404932,
+      "diff_ci_hi": 1.5671437933126844,
+      "effect": "dz",
+      "effect_size": 0.04169091894202105,
+      "es_ci_lo": -0.39292138869622595,
+      "es_ci_hi": 0.5159729011056456,
+      "p": 0.8468438910926165,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "measure": "trans_speed_m_s",
+      "n": 22,
+      "shapiro_p": 0.9498166216988719,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": 0.03146572530176548,
+      "diff_ci_lo": 0.01713871704378517,
+      "diff_ci_hi": 0.045864044864121344,
+      "effect": "dz",
+      "effect_size": 0.8902156472660981,
+      "es_ci_lo": 0.4656606955883858,
+      "es_ci_hi": 1.5841555383299502,
+      "p": 0.0004270931520564889,
+      "p_holm": 0.0021354657602824447,
+      "significant": true
+    },
+    {
+      "measure": "dir_entropy_bits",
+      "n": 22,
+      "shapiro_p": 0.8714398590641228,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": -0.038365240723796615,
+      "diff_ci_lo": -0.15523070580357948,
+      "diff_ci_hi": 0.08051333241693688,
+      "effect": "dz",
+      "effect_size": -0.13303287783224452,
+      "es_ci_lo": -0.6092034854190022,
+      "es_ci_hi": 0.28598572336833356,
+      "p": 0.5393608666431932,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "measure": "dir_coverage",
+      "n": 22,
+      "shapiro_p": 0.41374822450598286,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": -0.010153619528619519,
+      "diff_ci_lo": -0.02098611987934904,
+      "diff_ci_hi": 0.001280455013093901,
+      "effect": "dz",
+      "effect_size": -0.3709198853812081,
+      "es_ci_lo": -0.8993239667407882,
+      "es_ci_hi": 0.037569270762927875,
+      "p": 0.0965370400750323,
+      "p_holm": 0.28961112022509694,
+      "significant": false
+    },
+    {
+      "measure": "pos_entropy_bits",
+      "n": 22,
+      "shapiro_p": 0.2547530394343499,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": 0.25304797515371297,
+      "diff_ci_lo": 0.1393469394627979,
+      "diff_ci_hi": 0.37160213563431443,
+      "effect": "dz",
+      "effect_size": 0.875618129923735,
+      "es_ci_lo": 0.5202677277086799,
+      "es_ci_hi": 1.3909348256875542,
+      "p": 0.0005030771402286902,
+      "p_holm": 0.0021354657602824447,
+      "significant": true
+    }
+  ],
+  "sensitivity": [
+    {
+      "measure": "ang_speed_deg_s",
+      "n": 22,
+      "test": "paired t",
+      "diff": 0.11980945767119118,
+      "effect_size": 0.0339041104240977,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "measure": "trans_speed_m_s",
+      "n": 22,
+      "test": "paired t",
+      "diff": 0.033688734543384745,
+      "effect_size": 0.898462743926565,
+      "p_holm": 0.0019467586869336547,
+      "significant": true
+    },
+    {
+      "measure": "dir_entropy_bits",
+      "n": 22,
+      "test": "paired t",
+      "diff": -0.030241343373600686,
+      "effect_size": -0.10282511751102306,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "measure": "dir_coverage",
+      "n": 22,
+      "test": "paired t",
+      "diff": -0.009033372748650516,
+      "effect_size": -0.3313177632289035,
+      "p_holm": 0.4053666192682843,
+      "significant": false
+    },
+    {
+      "measure": "pos_entropy_bits",
+      "n": 22,
+      "test": "paired t",
+      "diff": 0.26572398606963166,
+      "effect_size": 0.8662427297390809,
+      "p_holm": 0.0022353981752749837,
+      "significant": true
+    }
+  ],
+  "friedman": [
+    {
+      "measure": "ang_speed_deg_s",
+      "n": 17,
+      "k": 12,
+      "chi2": 8.13122171945713,
+      "p": 0.7015031771622846,
+      "kendall_w": 0.04348246908800604,
+      "p_holm": 0.7015031771622846,
+      "significant": false
+    },
+    {
+      "measure": "trans_speed_m_s",
+      "n": 17,
+      "k": 12,
+      "chi2": 36.97285067873304,
+      "p": 0.00011644506058957177,
+      "kendall_w": 0.19771577903065796,
+      "p_holm": 0.0004657802423582871,
+      "significant": true
+    },
+    {
+      "measure": "dir_entropy_bits",
+      "n": 17,
+      "k": 12,
+      "chi2": 12.828054298642542,
+      "p": 0.3047121569747591,
+      "kendall_w": 0.06859922084835583,
+      "p_holm": 0.6094243139495182,
+      "significant": false
+    },
+    {
+      "measure": "dir_coverage",
+      "n": 17,
+      "k": 12,
+      "chi2": 21.5035037098104,
+      "p": 0.028514443408552845,
+      "kendall_w": 0.11499199844818395,
+      "p_holm": 0.08554333022565853,
+      "significant": false
+    },
+    {
+      "measure": "pos_entropy_bits",
+      "n": 17,
+      "k": 12,
+      "chi2": 41.027149321267075,
+      "p": 2.3842533203384467e-05,
+      "kendall_w": 0.2193965204345833,
+      "p_holm": 0.00011921266601692233,
+      "significant": true
+    }
+  ],
+  "early_late": [
+    {
+      "measure": "ang_speed_deg_s",
+      "n": 22,
+      "shapiro_p": 0.7387919650125626,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": -2.9178411655367325,
+      "diff_ci_lo": -4.744436632962928,
+      "diff_ci_hi": -1.1225271987062606,
+      "effect": "dz",
+      "effect_size": -0.6465553335908404,
+      "es_ci_lo": -1.154153460227572,
+      "es_ci_hi": -0.2719254534881319,
+      "p": 0.00633121587568026,
+      "p_holm": 0.0316560793784013,
+      "significant": true
+    },
+    {
+      "measure": "trans_speed_m_s",
+      "n": 22,
+      "shapiro_p": 0.5616217437047022,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": 0.002763182206973387,
+      "diff_ci_lo": -0.021193409886314983,
+      "diff_ci_hi": 0.02505577100098846,
+      "effect": "dz",
+      "effect_size": 0.049229077328738775,
+      "es_ci_lo": -0.36159314664166003,
+      "es_ci_hi": 0.5585049792040323,
+      "p": 0.8196234994395688,
+      "p_holm": 1.0,
+      "significant": false
+    },
+    {
+      "measure": "dir_entropy_bits",
+      "n": 22,
+      "shapiro_p": 0.9191362745727611,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": -0.1711188378989941,
+      "diff_ci_lo": -0.29355886354347627,
+      "diff_ci_hi": -0.05048918221951283,
+      "effect": "dz",
+      "effect_size": -0.5720032361939269,
+      "es_ci_lo": -1.0786813746802504,
+      "es_ci_hi": -0.18118843765989232,
+      "p": 0.013926508391936073,
+      "p_holm": 0.05242991709014314,
+      "significant": false
+    },
+    {
+      "measure": "dir_coverage",
+      "n": 22,
+      "shapiro_p": 0.7926779289628003,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": -0.009629296613724227,
+      "diff_ci_lo": -0.016475811354283585,
+      "diff_ci_hi": -0.002851253840311083,
+      "effect": "dz",
+      "effect_size": -0.5778339124518163,
+      "es_ci_lo": -1.0813375194481483,
+      "es_ci_hi": -0.18516736392862576,
+      "p": 0.013107479272535786,
+      "p_holm": 0.05242991709014314,
+      "significant": false
+    },
+    {
+      "measure": "pos_entropy_bits",
+      "n": 22,
+      "shapiro_p": 0.7675016099856375,
+      "test": "paired t",
+      "centre": "mean_diff",
+      "diff": 0.008812372776590931,
+      "diff_ci_lo": -0.17430675749530455,
+      "diff_ci_hi": 0.18643443071059,
+      "effect": "dz",
+      "effect_size": 0.02007068308089016,
+      "es_ci_lo": -0.40139988415152017,
+      "es_ci_hi": 0.4826533590270499,
+      "p": 0.9258905124188663,
+      "p_holm": 1.0,
+      "significant": false
+    }
+  ]
+}
